@@ -77,22 +77,22 @@ console.log(cube.surfaceArea()); // 150
     And a Cube isn't a Cuboid. They're different geometric objects
     with completely different properties/forumulas.
 
-    edge is not a property of a Cuboid, and length with and height are not properties 
+    edge is not a property of a Cuboid, and length, width and height are not properties 
     of a Cube.
 
     Neither Object should inherit from each other, unless I'm missing something...
 
-    This is why I chose to have one edge parameter for the Cube, set all
+    This is why I chose to have one edge parameter for the Cube constructor, set all
     the Cuboid parent properties equal to the edge,
     
-    and JUST to satisfy the requirments for the stretch, I used the parent properties for the 
-    volume and surfaceArea methods even though these are not properties of Cubes.
+    and JUST to satisfy the requirements for the stretch, I used the parent properties for the 
+    volume and surfaceArea methods even though these are not properties of cubes.
 
     I really just wanted to use edge by itself though...
     
     Volume of a cube:
 
-        V = a^3     (there's not length, width or height here)
+        V = a^3     (there's no length, width or height here)
 
     Surface area of a cube:
 

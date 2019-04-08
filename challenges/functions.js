@@ -54,13 +54,13 @@ myFunction();
 
   Because an inner-function always has access to the outer-function's scope, even
   after the outer-function has returned/left the call stack. This is root principle
-  of a closure. 
+  of a closure. (at least according to me... lol)
 
   Doesn't work in reverse though, outer-functions do _not_ have access to the
   inner-function's scope.
 
   Can be demonstrationed a bit more clearly if you returned the nestedFunction
-  instead of just calling it as in:
+  instead of just calling it, as in:
 
 */
 console.log('\nClosure Example 2:');
@@ -95,7 +95,7 @@ console.dir(innerFunction); // Look inside [[Scope]] to find a Closure Scope wit
 */
 console.log('\nClosure Example 3:');
 
-// there's a reason I chose var for this variable
+// there's a reason I chose 'var' for this variable, read below
 var globalVariable = 'globalVariable: I\'m still in the global scope! See for yourself:';
 
 let logGlobalVar = () => {
@@ -117,7 +117,7 @@ console.dir(logGlobalVar); // Look inside [[Scope]] to find a Global Scope with 
 
   var's in the Global Scope are declared on the 'window' object.
 
-  Where let's and const's are not. Truly strange......
+  Where let's and const's are not. Truly strange.....
 
 
   ********  BUT ONE LAST POINT: ********
