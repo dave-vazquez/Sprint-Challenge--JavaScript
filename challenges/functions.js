@@ -95,6 +95,7 @@ console.dir(innerFunction); // Look inside [[Scope]] to find a Closure Scope wit
 */
 console.log('\nClosure Example 3:');
 
+// there's a reason I chose var for this variable, read below:
 var globalVariable = 'globalVariable: I\'m still in the global scope! See for yourself:';
 
 let logGlobalVar = () => {
