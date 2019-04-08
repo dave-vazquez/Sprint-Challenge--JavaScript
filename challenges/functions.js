@@ -95,7 +95,7 @@ console.dir(innerFunction); // Look inside [[Scope]] to find a Closure Scope wit
 */
 console.log('\nClosure Example 3:');
 
-// there's a reason I chose var for this variable, read below:
+// there's a reason I chose var for this variable
 var globalVariable = 'globalVariable: I\'m still in the global scope! See for yourself:';
 
 let logGlobalVar = () => {
@@ -118,6 +118,30 @@ console.dir(logGlobalVar); // Look inside [[Scope]] to find a Global Scope with 
   var's in the Global Scope are declared on the 'window' object.
 
   Where let's and const's are not. Truly strange......
+
+
+  ********  BUT ONE LAST POINT: ********
+
+  I bring all this up _partly_ because this last example run's contrary to this 
+  popular youtube vid explaining closures: https://youtu.be/71AtaJpJHw0?t=295
+
+  I've seen it pop up on forums occasionally and also saw it posted in the webpt5_sprint03 
+  channel last week and immediately recognized it from when I was learning JS last year.
+
+  And if you haven't seen it, DON'T BOTHER WATCHING!!!! You have better things to do!! XD
+
+  I don't think this guy was wrong about what a closure is, I think his information
+  might just be outdated (2015 pub date).
+
+  Or Chrome updated their V8 engine to encapsulate closures in a different way.
+  I have no idea.
+
+  All I know is that I tried his exact example and it no longer produces the same result,
+  and it bothered me that the definition I had for closures wasn't compatible with his.
+
+  That video had a "wow" effect on me last year because it hypes up this example of a 
+  closure in it's simplest form and how the guy tried it on an interview and they told
+  him he was wrong even though he was right... 
 
 */
 
