@@ -30,13 +30,55 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    `.map` returns a new array, `.forEach` just iterates over an array
+
 2. What is the difference between a function and a method?
+
+    A method is a function delcared on an object, a function is declared in the global scope
 
 3. What is closure?
 
+    A closure is the encapsulation of a function and it's lexical scope.
+
+    Anything declared in the lexical scope of a function that is used by the function becomes a part of the closure,
+
+    so long as the lexical scope is a function
+
+    closure = function + lexical scope
+
+    the inner-function will always have access to the outer function, even after the outer function returns or leaves the call stack
+
 4. Describe the four rules of the 'this' keyword.
 
+    global binding - this is the default binding of 'this' when 'this is bound to no other object.
+
+    new binding - Binding that occurs when an object is instantiated with the 'new' keyword.
+                  In a function constructor we set properties using the prefix `this.` 
+                  `this.` has no value until an instance of that object is created with the new keyword
+
+    implicit binding - occurs when an object literal is created. implicit meaning the `this.` goes without saying
+                       since object literals are the only instance of that object, and `this` can refer to only
+                       that object alone.
+
+    explicity binding - When the value of `this` in a pre-defined function or object is reassigned to
+                        the value of `this` of another scope.
+
+                        Acheived using call(), apply() or bind methods
+
+
+
 5. Why do we need super() in an extended class?
+
+    super(); is what allows us to pass values to the properties of the parent class, and to inherit those
+
+    properties in the child class.
+
+    Without super() we're not inheriting anything from the parent class and the whole point of inheritance is lost.
+
+    super() is just a fancy way of saying ParentObject.call(this, props);
+
+
+    
 
 ## Project Set up
 
