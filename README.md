@@ -71,11 +71,8 @@ Edit this document to include your answers after each question. Make sure to lea
 5. Why do we need super() in an extended class?
 
     super(); is what allows us to pass values to the properties of the parent class, and to inherit those
-
     properties in the child class.
-
     Without super() we're not inheriting anything from the parent class and the whole point of inheritance is lost.
-
     super() is just a fancy way of saying ParentObject.call(this, props);
 
 
