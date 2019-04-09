@@ -50,11 +50,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four rules of the 'this' keyword.
 
-    global binding - this is the default binding of 'this' when 'this is bound to no other object.
+    global binding - this is the default binding of 'this' when 'this is bound to no other object. this will return the global object 
+                      of the runtime environment
 
-    new binding - Binding that occurs when an object is instantiated with the 'new' keyword.
+    new binding - Binding that occurs when an object is instantiated with the `new` keyword.
                   In a function constructor we set properties using the prefix `this.` 
-                  `this.` has no value until an instance of that object is created with the new keyword
+                  `this.` has no value until an instance of that object is created with the `new` keyword
 
     implicit binding - occurs when an object literal is created. implicit meaning the `this.` goes without saying
                        since object literals are the only instance of that object, and `this` can refer to only
@@ -63,7 +64,7 @@ Edit this document to include your answers after each question. Make sure to lea
     explicity binding - When the value of `this` in a pre-defined function or object is reassigned to
                         the value of `this` of another scope.
 
-                        Acheived using call(), apply() or bind methods
+                        Acheived using call(), apply() or bind methods.
 
 
 
