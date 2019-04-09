@@ -64,7 +64,7 @@ Edit this document to include your answers after each question. Make sure to lea
     explicity binding - When the value of `this` in a pre-defined function or object is reassigned to
                         the value of `this` of another scope.
 
-                        Acheived using call(), apply() or bind methods.
+                        Acheived using call(), apply() or bind methods... why am I in a code block?
 
 
 
