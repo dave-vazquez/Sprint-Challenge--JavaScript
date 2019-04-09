@@ -39,14 +39,11 @@ Edit this document to include your answers after each question. Make sure to lea
 3. What is closure?
 
     A closure is the encapsulation of a function and it's lexical scope.
-
     Anything declared in the lexical scope of a function that is used by the function becomes a part of the closure,
-
     so long as the lexical scope is a function
 
     closure = function + lexical scope
-
-    the inner-function will always have access to the outer function, even after the outer function returns or leaves the call stack
+    The inner-function will always have access to the outer function, even after the outer function returns or leaves the call stack.
 
 4. Describe the four rules of the 'this' keyword.
 
