@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. What is the difference between a function and a method?
 
-    A method is a function delcared on an object, a function is declared in the global scope
+    A method is a function delcared on an object, a function is not
 
 3. What is closure?
 
